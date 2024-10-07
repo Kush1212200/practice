@@ -15,7 +15,7 @@ public class Test6 {
 		System.out.println(s.headSet(567));
 		System.out.println(s.tailSet(123));
 		System.out.println(s.subSet(89, 567));*/
-SortedSet<Student> s = new TreeSet<>(new StudentNameComparator());
+SortedSet<Student> s = new TreeSet<>((x,y)-> y.getStname().compareTo(x.getStname()));
 		
 		Student priyanshu = new Student(100,"priyanshu");
 		Student krishna = new Student(898,"krishna");
