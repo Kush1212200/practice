@@ -15,14 +15,15 @@ public class Test4 {
 	//	for(Object o : s) {
 		//	Integer i = (Integer)o;
 		//	if(i % 2 == 0)
-		for(Integer o :s) {
+	/*r(Integer o :s) {
 			if(o % 2 == 0)
 			System.out.println(o);
-		}
+		}*/
 		
 		System.out.println(s);//no duplicates 
 		//insertion order not able to maintain and to predict for hashset
 		//linkedhashset set allows to preserve insertion order
+		s.stream().filter(x-> x%2 == 0).forEach(x->System.out.println(x));
 	}
 
 }
