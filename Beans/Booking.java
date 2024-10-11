@@ -18,7 +18,11 @@ public class Booking {
 	        this.totalCost = totalCost;
 	    }
 
-	    public static int getBookingCounter() {
+	    public Booking(int bookingId2, int customerId, int eventId, int numTickets2, double totalCost2, LocalDate now) {
+			// TODO Auto-generated constructor stub
+		}
+
+		public static int getBookingCounter() {
 	        return bookingCounter;
 	    }
 
